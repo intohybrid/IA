@@ -1,0 +1,9 @@
+package cl.udla.ia.domain;
+
+public interface EstructuraDatos {
+	
+	void insert(Object value);
+	void remove(Object value);
+	Object find(Integer key);
+
+}

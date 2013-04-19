@@ -1,0 +1,37 @@
+package cl.udla.ia.domain;
+
+import java.util.List;
+
+public class ArbolBinario implements EstructuraDatos<Nodo>{
+
+	@Override
+	public void insert(Nodo value) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void remove(Nodo value) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Nodo find(Nodo key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Nodo> get() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/**
+	 * @param args
+	 */
+	
+	
+
+}

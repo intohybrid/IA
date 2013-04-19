@@ -1,0 +1,18 @@
+package cl.udla.ia.domain;
+
+public class Nodo {
+
+	private Integer numero;
+	private Nodo hijoIzq;
+	private Nodo hijoDer;
+	
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

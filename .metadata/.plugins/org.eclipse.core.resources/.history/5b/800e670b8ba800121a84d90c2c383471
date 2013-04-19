@@ -1,0 +1,12 @@
+package cl.udla.ia.domain;
+
+import java.util.List;
+
+public interface EstructuraDatos<T,W> {
+	
+	void insert(T value);
+	void remove(T value);
+	T find(T key);
+	List<T> get();
+
+}

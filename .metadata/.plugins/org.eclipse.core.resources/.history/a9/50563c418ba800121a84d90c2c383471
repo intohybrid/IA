@@ -1,0 +1,16 @@
+package cl.udla.ia.main;
+
+import cl.udla.ia.domain.ArbolBinario;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		ArbolBinario arbol = new ArbolBinario();
+		arbol.insert(2);
+
+	}
+
+}
