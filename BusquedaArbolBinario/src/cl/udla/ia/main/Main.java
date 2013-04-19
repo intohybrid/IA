@@ -16,9 +16,7 @@ public class Main {
 		arbol.insert(2);
 		arbol.insert(9);
 		arbol.insert(14);
-		
-		
-
+		arbol.inorden();
 	}
 
 }

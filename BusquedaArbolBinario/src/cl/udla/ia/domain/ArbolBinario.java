@@ -1,15 +1,29 @@
+/*
+ * Marcelo Contreras Caballol
+ * Fundamentos Inteligencia Artificial - 2013
+ */
 package cl.udla.ia.domain;
 
 import java.util.List;
 
+/**
+ *  Class ArbolBinario.
+ */
 public class ArbolBinario implements EstructuraDatos<Nodo, Integer>{
 
+	/**  raiz. */
 	private Nodo raiz;
 	
+	/**
+	 * Instantiates a new arbol binario.
+	 */
 	public ArbolBinario(){
 
 	}
 	
+	/* (non-Javadoc)
+	 * @see cl.udla.ia.domain.EstructuraDatos#insert(java.lang.Object)
+	 */
 	@Override
 	public void insert(Integer value) {
 		Nodo nodoEncontrado = find(value);
@@ -46,23 +60,28 @@ public class ArbolBinario implements EstructuraDatos<Nodo, Integer>{
 		
 	}
 
+	/* (non-Javadoc)
+	 * @see cl.udla.ia.domain.EstructuraDatos#remove(java.lang.Object)
+	 */
 	@Override
 	public void remove(Integer value) {
 		 remove(getRaiz(), value);
 	}
 	
 	
-	public void remove(Nodo raiz, Integer value) {
-		
-		if (){
-			
-			
-		}
-		
-		
-		
+	/**
+	 * Removes.
+	 *
+	 * @param nodo
+	 * @param value
+	 */
+	public void remove(Nodo nodo, Integer value) {
+		// TODO Auto-generated method stub
 	}
 
+	/* (non-Javadoc)
+	 * @see cl.udla.ia.domain.EstructuraDatos#find(java.lang.Object)
+	 */
 	@Override
 	public Nodo find(Integer key) {
 
@@ -93,12 +112,20 @@ public class ArbolBinario implements EstructuraDatos<Nodo, Integer>{
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see cl.udla.ia.domain.EstructuraDatos#get()
+	 */
 	@Override
 	public List<Nodo> get() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 	
+	/**
+	 * Inorden.
+	 *
+	 * @param value
+	 */
 	public void inorden(Nodo value){
 		if(value == null) return;
 		inorden(value.getHijoIzq());
@@ -106,10 +133,18 @@ public class ArbolBinario implements EstructuraDatos<Nodo, Integer>{
 		inorden(value.getHijoDer());
 	}
 	
+	/**
+	 * Inorden.
+	 */
 	public void inorden(){
 		inorden(getRaiz());
 	}
 	
+	/**
+	 * Postorden.
+	 *
+	 * @param value
+	 */
 	public void postorden(Nodo value){
 		if(value == null) return;
 		inorden(value.getHijoIzq());
@@ -117,10 +152,18 @@ public class ArbolBinario implements EstructuraDatos<Nodo, Integer>{
 		System.out.println(value.getNumero() + " ");		
 	}
 
+	/**
+	 * Postorden.
+	 */
 	public void postorden(){
 		postorden(getRaiz());
 	}
 	
+	/**
+	 * Preorden.
+	 *
+	 * @param value
+	 */
 	public void preorden(Nodo value){
 		if(value == null) return;
 		System.out.println(value.getNumero() + " ");	
@@ -129,15 +172,28 @@ public class ArbolBinario implements EstructuraDatos<Nodo, Integer>{
 			
 	}
 
+	/**
+	 * Preorden.
+	 */
 	public void preorden(){
 		postorden(getRaiz());
 	}
 
 	
+	/**
+	 * Gets raiz.
+	 *
+	 * @return the raiz
+	 */
 	public Nodo getRaiz() {
 		return raiz;
 	}
 
+	/**
+	 * Sets the raiz.
+	 *
+	 * @param raiz
+	 */
 	public void setRaiz(Nodo raiz) {
 		this.raiz = raiz;
 	}
