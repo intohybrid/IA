@@ -1,7 +1,0 @@
-package cl.udla.ia.domain;
-
-public interface EstructuraDatos {
-	
-	protected void insertaNodo(Nodo nodo);
-
-}
